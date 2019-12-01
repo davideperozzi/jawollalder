@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAWOLL ALDER 🤙</title>
+    <style>
+      @keyframes moveX {
+        from { left: 0; } to { left: calc(100vw - 320px); }
+      }
+
+      @keyframes moveY {
+        from { top: 0; } to { top: calc(100vh - 220px); }
+      }
+
+      .jawoll-alder {
+        width: 320px;
+        height: 220px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url('./jawollalder.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: absolute;
+        animation: moveX 3s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jawoll-alder"></div>
+  </body>
+</html>
